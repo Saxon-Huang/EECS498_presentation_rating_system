@@ -67,9 +67,6 @@ def main():
         if num == 0:
             num += 1
             continue
-        if num < 2429:
-            num += 1
-            continue
         yearunknown = False
         # SirKenRobinson_2006.mp3?apikey=acme-roadrunner'
         url = 'https://download.ted.com/talks/'
