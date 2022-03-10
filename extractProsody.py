@@ -17,7 +17,8 @@ def feature_extract(fn):
     infilename = data_path + fn
     outfilename = save_path + fn[:-4] + ".csv"
     opensmile_call = exe_opensmile + ' ' + opensmile_options + \
-        ' -I ' + infilename + ' -csvoutput ' + outfilename
+        ' -I ' + infilename + ' -csvoutput ' + outfilename + \
+        ' -start 60 -end 600'
     print(opensmile_call)
     os.system(opensmile_call)
 
